@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
 
-class User
+class User // access modifier is "private" by default
 {
   std::string status = "Gold";
 
-  public:
+  public: //set class's access modifier as public
     std::string first_name;
     std::string last_name;
     std::string get_status()
@@ -14,7 +14,7 @@ class User
     }
 };
 
-int add_user_if_not_exist(std::vector<User> &users, User user) //search for right first & last name
+int add_user_if_not_exist(std::vector<User> &users, User user) //search for correct first & last name
 {
   for(int i = 0; i < users.size(); i++)
   {
@@ -51,4 +51,6 @@ int main()
   user.last_name = "Dao";
 
   std::cout << add_user_if_not_exist(users, user) << std::endl;
+
+  std::cout << users.size() << std::endl;
 }
