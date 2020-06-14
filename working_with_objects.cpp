@@ -34,13 +34,13 @@ int main()
 
   User user1, user2, user3;
   user1.first_name = "Anthony";
-  user2.last_name = "Dao";
+  user1.last_name = "Dao";
 
-  user1.first_name = "Madeline";
+  user2.first_name = "Madeline";
   user2.last_name = "Nguyen";
 
-  user1.first_name = "Adam";
-  user2.last_name = "Le";
+  user3.first_name = "Adam";
+  user3.last_name = "Le";
 
   users.push_back(user1);
   users.push_back(user2);
